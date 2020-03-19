@@ -4,10 +4,7 @@
     "es6": true,
     "jest": true
   },
-  "extends": [
-    "airbnb-base",
-    "plugin:jsx-a11y/recommended"
-  ],
+  "extends": "airbnb-base",
   "globals": {
     "window": true,
     "document": true,
@@ -21,7 +18,7 @@
   "plugins": [
     "@typescript-eslint",
     "eslint-plugin-react",
-    "jsx-a11y"
+    "react-native"
   ],
   "parserOptions": {
     "ecmaVersion": 2018,
@@ -128,7 +125,20 @@
         "ts": "never",
         "tsx": "never"
       }
-    ]
+    ],
+    "react-native/no-color-literals": 2,
+    "react-native/no-inline-styles": 2,
+    "react-native/no-raw-text": 2,
+    "react-native/no-single-element-style-arrays": 2,
+    "react-native/no-unused-styles": 2,
+    "react-native/sort-styles": [
+      "error",
+      "asc",
+      {
+        "ignoreClassNames": true
+      }
+    ],
+    "react-native/split-platform-components": 2
   },
   "settings": {
     "import/resolver": {

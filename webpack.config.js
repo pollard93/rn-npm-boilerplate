@@ -1,5 +1,4 @@
 const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const packageJson = require('./package.json');
 
 module.exports = {
@@ -42,33 +41,8 @@ module.exports = {
         test: /\.js$/,
         loader: 'source-map-loader',
       },
-      {
-        test: /\.css$/i,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              // you can specify a publicPath here
-              // by default it uses publicPath in webpackOptions.output
-              publicPath: '../',
-              hmr: process.env.NODE_ENV === 'development',
-            },
-          },
-          'css-loader',
-        ],
-      },
     ],
   },
-
-  plugins: [
-    new MiniCssExtractPlugin({
-      // Options similar to the same options in webpackOptions.output
-      // all options are optional
-      filename: '[name].css',
-      chunkFilename: '[id].css',
-      ignoreOrder: false, // Enable to remove warnings about conflicting order
-    }),
-  ],
 
   // When importing a module whose path matches one of the following, just
   // assume a corresponding global variable exists and use that instead.
@@ -77,5 +51,6 @@ module.exports = {
   externals: {
     react: 'react',
     reactDOM: 'react-dom',
+    'react-native': 'react-native',
   },
 };
