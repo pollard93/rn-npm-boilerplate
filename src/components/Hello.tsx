@@ -1,6 +1,6 @@
 import React from 'react';
-import './Hello.css';
+import { Text } from 'react-native';
 
 export interface HelloProps { compiler: string; }
 
-export const Hello = (props: HelloProps) => <h1 className="hello__wrap">Hello</h1>;
+export const Hello = (props: HelloProps) => <Text>Hello</Text>;
