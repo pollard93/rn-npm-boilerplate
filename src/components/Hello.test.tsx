@@ -6,7 +6,7 @@ import { Hello } from './Hello';
 
 describe('Hello tests', () => {
   it('renders three hello text', () => {
-    const wrapper = shallow(<Hello compiler="test" />);
+    const wrapper = shallow(<Hello content="Hello" />);
     expect(wrapper.contains(<Text>Hello</Text>)).to.be.true;
   });
 });
