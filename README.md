@@ -8,7 +8,7 @@ Includes support for typescript and unit tests.
 
 1. Install modules - `yarn`
 
-2. Start development with storybook - `yarn start`
+2. Start development with storybook - `yarn start:ios:example` or `yarn start:android:example`
 
 3. Run unit tests - `yarn test:unit`
 
@@ -18,7 +18,7 @@ Includes support for typescript and unit tests.
 
 6. Bundle with - `yarn build`
 
-7. Install via git `yarn add ssh://bitbucket.org:madebyprism/mpb-components-react-native-npm-boilerplate.git#{{branch/tag}}`
+7. Install via git `yarn add ssh://bitbucket.org:madebyprism/mpb-components-rn-npm-boilerplate.git#{{branch/tag}}`
 
 ## Using as a boilerplate
 
