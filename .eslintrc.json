@@ -81,13 +81,7 @@
       "off"
     ],
     "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "devDependencies": [
-          "src/**/*.stories*.{js,tsx}",
-          "src/**/*.test*.{js,tsx}"
-        ]
-      }
+      "off"
     ],
     "no-case-declarations": [
       "off"

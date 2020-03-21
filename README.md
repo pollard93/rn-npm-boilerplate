@@ -6,7 +6,7 @@ Includes support for typescript and unit tests.
 
 ## Usage
 
-1. Install modules - `yarn`
+1. Install modules - `yarn && cd example && yarn`
 
 2. Bundle with - `yarn build`
 
@@ -30,6 +30,6 @@ Includes support for typescript and unit tests.
 
 3. Add a new git repo and push
 
-4. Any non development dependencies must be added to the devDependencies and also the peerDependencies.
+4. Any non development dependencies must be added to the devDependencies and also the peerDependencies. They must also be added to webpack config `externals` so they are not bundled.
 
 5. Tag versions in git so they be selected on installation
