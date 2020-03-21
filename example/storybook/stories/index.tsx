@@ -1,6 +1,5 @@
 
 import React from 'react';
-import {Text} from 'react-native';
 import { storiesOf } from '@storybook/react-native';
 import Hello from 'mbp-components-rn-npm-boilerplate';
 import CenterView from '../components/CenterView/CenterView';
